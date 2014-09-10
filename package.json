@@ -3,14 +3,14 @@
     "title": "dotJEM Node Angular Files",
     "description": "Orders Angular module files according to dependencies.",
     "version": "0.1.0",
-    "homepage": "",
+    "homepage": "https://github.com/dotJEM/npm-ng-files",
     "author": {
         "name": "dotjem",
         "url": "https://github.com/dotJEM"
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/dotJEM/npm-ng-files"
     },
     "license": "MIT",
     "dependencies": {
