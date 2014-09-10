@@ -1,5 +1,5 @@
 {
-    "name": "dotjem-node-ng-files",
+    "name": "dotjem-ng-files",
     "title": "dotJEM Node Angular Files",
     "description": "Orders Angular module files according to dependencies.",
     "version": "0.1.0",
