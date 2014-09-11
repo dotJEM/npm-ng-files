@@ -52,6 +52,34 @@ angular.module('name', ['dependency']);
 
 If it finds sucn a file in a folder, that folder is treated as a module and all files in that folder and subfolders of it will be loaded into the module.
 
+As such a structure could be:
+```
+scritpts/
+  module1/
+    module1.module.js
+    config1.js
+    controllers/
+      myController.js
+  module2/
+    module2.module.js
+    config2.js
+    controllers/
+      myOtherController.js
+  subs/
+    module3/
+      module3.module.js
+      config4.js
+      controllers/
+        myThirdController.js
+    module4/
+      module4.module.js
+      config4.js
+      controllers/
+        myFinalController.js
+
+```
+
+
 if a module dependency is not loaded as part of the process, it's considered a 3rd party deppendency and ignored when building the tree as it is expected that all modules of that sort is loaded first.
 
 Final note, this is still experimental.
