@@ -1,5 +1,6 @@
 npm-ng-files
 ============
+[![Build Status](https://travis-ci.org/dotJEM/npm-ng-files.svg?branch=master)](https://travis-ci.org/dotJEM/npm-ng-files)
 
 Collects angular files from a set of directives and orders them according to their dependencies.
 
