@@ -18,7 +18,7 @@ Getting Started
 For the most simple usecase, use getSources
 ```javascript
 var ngFiles = require('dotjem-ng-files');
-var filesPromise = ngFiles.getSources('first dir', 'second dir', ... , 'n'th dir');
+var filesPromise = ngFiles.getSources('first dir', 'second dir', ... , "n'th dir");
 
 filesPromise.then(function(angularOrderedFiles) {
   
