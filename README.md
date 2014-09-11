@@ -28,7 +28,7 @@ filesPromise.then(function(angularOrderedFiles) {
 If you wan't to collect files in separate contexts, use the AngularContext.
 ```javascript
 var ngFiles = require('dotjem-ng-files');
-var context = new ngFiles.AngularContext('first dir', 'second dir', ... , 'n'th dir');
+var context = new ngFiles.AngularContext('first dir', 'second dir', ... , "n'th dir");
 context
   .load('antoher dir')
   .load('more dirs', 'here');
