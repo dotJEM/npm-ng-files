@@ -2,7 +2,7 @@
     "name": "dotjem-ng-files",
     "title": "dotJEM Node Angular Files",
     "description": "Orders Angular module files according to dependencies.",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "homepage": "https://github.com/dotJEM/npm-ng-files",
     "author": {
         "name": "dotjem",
