@@ -22,7 +22,11 @@ describe('fileUtil', function() {
 
         it('can replace linebreaks and double whitespaces with dashes', function() {
             return fileUtil.directories('./test/files/')
-                .should.eventually.eql(['test/files/testdir_001', 'test/files/testmodule_001']);
+                .should.eventually.eql([
+                    'test/files/testdir_001',
+                    'test/files/testmodule_001',
+                    'test/files/testmodule_002'
+                ]);
         });
     });
 });

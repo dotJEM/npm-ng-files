@@ -19,7 +19,8 @@ describe('AngularModule', function() {
             var module = AngularModule.load('./test/files/testmodule_001/');
             var sources = module.then(function(module){
                 return module.sources().map(function(file){
-                    return file.replace(__dirname.replace(/\\/g, '/'),'');
+                    var dir = __dirname.replace(/\\/g, '/').length;
+                    return file.replace(/\\/g, '/').substring(dir);
                 });
             });
 

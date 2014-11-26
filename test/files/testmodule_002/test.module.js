@@ -1,0 +1,1 @@
+angular.module('testmodule_002',['testmodule_001', 'foo', "bar"]);
