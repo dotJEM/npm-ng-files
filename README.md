@@ -45,36 +45,39 @@ context.modules().then(function(orderedModules) {
 
 Caveats:
 ----
-The angular context will look for a file ending on .module.js which is expected to be a module difinition, e.g. containing:
-
-```javascript
-angular.module('name', ['dependency']);
-```
-
-If it finds sucn a file in a folder, that folder is treated as a module and all files in that folder and subfolders of it will be loaded into the module.
+The angular context will look for specific files and treats them in a specific way.
+ - If a folder contains a file that ends with `.module.js` that folder is treated as a module.
+ -- The module file must contain a mudule definition: `angular.module('name', ['dependency']);`
+ -- All files in a module folder and subfolders of it will be loaded into the module.
+ - If a file inside a module folder contains `.config.` that file is treated as a configuration file and is loaded last.
+ -- Modules may have multiple config files and petterns like `name.config.routing.js` and `name.config.js` are supported.
 
 As such a structure could be:
 ```
 scritpts/
   module1/
     module1.module.js
-    config1.js
+    module1.config.js
     controllers/
       myController.js
   module2/
     module2.module.js
-    config2.js
+    somefile.js
+    module2.config.js
     controllers/
       myOtherController.js
   subs/
     module3/
       module3.module.js
-      config4.js
+      somefile.js
+      module3.config.js
       controllers/
         myThirdController.js
     module4/
       module4.module.js
-      config4.js
+      somefile.js
+      module4.config.specific.js
+      module4.config.other.js
       controllers/
         myFinalController.js
 
